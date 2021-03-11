@@ -4,11 +4,43 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel='stylesheet' href='style.css' /
+  <link rel='stylesheet' href='style.css' />
   <title>Zonk</title>
 </head>
 <body>
-  
+  <h1 class='title'>ZONK!</h1>
+  <div class='display'>
+    <!-- player 1 info -->
+    <div id='p1'>
+      <h2 class="player">Player 1</h2>
+      <h2 class="totalScore" id='totalP1'>0</h2>
+      <h3 class="currentScore" id='currentP1'>0</h3>
+    </div>
+    <!-- dice info -->
+    <div id='dice'>
+      <h2 id='begin'>Roll the dice to begin!</h2>
+      <div class='pair'>
+        <img class='die' id='dice1' src='./images/dice-1.png' alt='pic of dice' />
+        <img class='die' id='dice2' src='./images/dice-2.png' alt='pic of dice' />
+      </div>
+      <div class='pair'>
+        <img class='die' id='dice3' src='./images/dice-3.png' alt='pic of dice' />
+        <img class='die' id='dice4' src='./images/dice-4.png' alt='pic of dice' />
+      </div>
+      <div class='pair'>
+        <img class='die' id='dice5' src='./images/dice-5.png' alt='pic of dice' />
+        <img class='die' id='dice6' src='./images/dice-6.png' alt='pic of dice' />
+      </div>
+      <button class="rollBtn">Roll Dice</button>
+      <button>Hold Score</button>
+    </div>
+    <!-- player 2 info -->
+    <div id='p2'>
+      <h2>Player 2</h2>
+      <h2 class="totalScore" id='totalP2'>0</h2>
+      <h3 class="currentScore" id='currentP2'>0</h3>
+    </div>
+  </div>
   <script src='script.js'></script>
 </body>
 </html>
